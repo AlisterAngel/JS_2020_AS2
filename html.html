@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo App</title>
+    <script src="java.js" async></script>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body onload="callForWeather()">
+    <div class="container">
+      <div class="inputSection">
+        <label for="new_task">Add Task </label><input id="new_task" type="text"><button id="add_btn" onclick="createNewTaskElement()">Add</button>
+      </div>
+      <h3>Still Todo Tasks</h3>
+      <ul id="incomplete_tasks_list">
+      </ul>
+      <h3>Completed Tasks</h3>
+      <ul id="completed_tasks_list">
+      </ul>
+    </div>
+    <br/>
+    <div id="weatherContainer">
+      <h2 id="cityName">Unknown</h2>
+      <div id="weatherInfo">
+        <img id="icon">??</img>
+        <p id="temp">???</p>
+        <p id="desc">??</p>
+      </div>
+    </div>
+  </body>
+</html>
