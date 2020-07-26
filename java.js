@@ -1,5 +1,5 @@
 //JavaScript
-
+let data = "";
 let incompList = document.getElementById("incomplete_tasks_list");
 let compList = document.getElementById("completed_tasks_list");
 
@@ -82,7 +82,7 @@ function weather(lat, long) {
     request.send();
 
     request.onload = function(){
-      let data = request.response;
+      data = request.response;
 
       updateDOM(data);
     }
