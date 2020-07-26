@@ -79,7 +79,7 @@ function weather(lat, long) {
 
     request.responseType = "json";
 
-    request.send;
+    request.send();
 
     request.onload = function(){
       let data = request.response;
