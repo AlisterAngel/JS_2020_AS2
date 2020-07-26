@@ -95,7 +95,7 @@ function updateDOM(data) {
     var desc = data.weather[0].description;
     var icon = data.weather[0].icon;
     document.getElementById("cityName").innerHTML = city;
-    document.getElementById("temp").innerHTML = temp + "&#176;";
+    document.getElementById("temp").innerHTML = temp + "&#8451;";
     document.getElementById("desc").innerHTML = desc;
     document.getElementById("icon").setAttribute('src',icon);
 }
